@@ -1,0 +1,90 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.app {
+    width: 80%;
+    margin: 10px auto;
+    .nav-box {
+        display: flex;
+        justify-content: space-between;
+        .navbar {
+            a {
+                padding: 0px 20px;
+                font-size: 22px;
+            }
+            a:active, a:hover {
+                color: red;
+                cursor: pointer;
+            }
+        }
+        .btn-logout {
+            font-size: 20px;
+        }
+    }
+    .login-box, .register-box {
+  
+        margin: 30px;
+        width: 300px;
+        height: 400px;
+        border: 1px solid;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        h2 {
+            text-align: center;
+            margin: 20px;
+        }
+        label {
+            width: 280px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .log {
+            margin: 30px;
+            display: flex;
+            justify-content: space-around;
+            .btn-login {
+                padding: 5px 10px;
+            }
+            .register-btn {
+                padding: 5px;
+                border: 1px solid;
+                border-radius: 4px;
+            }
+        }
+    }
+    .users-list, .products-list {
+        margin: 20px;
+        ul {
+            margin-top: 20px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            a {
+                font-size: 20px;
+                display: flex;
+                justify-content: space-between;
+                button {
+                    background: none;
+                    border: none;
+                }
+                button:hover {
+                    color: red;
+                    cursor: pointer;
+                    transform: scale(1.5);
+                }
+            }
+            a:hover {
+                border-bottom: 1px solid;
+            }
+        }
+    }
+
+}
